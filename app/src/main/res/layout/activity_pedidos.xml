@@ -112,4 +112,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/idPedido"
         android:layout_marginBottom="76dp" />
+    
+     <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/idPedido"
+        android:onClick="Ovo"
+        android:text="Ovo" />
 </RelativeLayout>
