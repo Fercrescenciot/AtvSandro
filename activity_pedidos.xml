@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pedidos">
+
+    <EditText
+        android:id="@+id/idPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/idPedido"
+        android:layout_marginTop="116dp"
+        android:text="opcoes"
+        android:layout_alignLeft="@+id/idPedido" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idPedido"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/idPedido"
+        android:layout_marginTop="163dp"
+        android:text="Creme"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idPedido"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/idPedido"
+        android:layout_marginTop="212dp"
+        android:text="Chocolate" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/idPedido"
+        android:layout_marginBottom="234dp"
+        android:text="Quantidade"
+        android:layout_alignLeft="@+id/idPedido" />
+
+    <Button
+        android:id="@+id/btnmais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="173dp"
+        android:text="+"
+        android:onClick="Mais"
+        android:layout_alignRight="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/txtQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnmais"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="147dp"
+        android:layout_marginStart="147dp" />
+
+    <Button
+        android:id="@+id/btnmenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnmais"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:text="-"
+        android:onClick="Menos"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btnPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/idPedido"
+        android:layout_marginBottom="109dp"
+        android:text="Pedido"
+        android:layout_alignLeft="@+id/idPedido" />
+
+    <TextView
+        android:id="@+id/txtPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idPedido"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/idPedido"
+        android:layout_marginBottom="76dp" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/idPedido"
+        android:onClick="Ovo"
+        android:text="Ovo" />
+</RelativeLayout>
