@@ -84,5 +84,7 @@ public class Pedidos extends AppCompatActivity {
     }
 
 
-
+ public void Ovo(View view){
+        startActivity(new Intent(Pedidos.this, MainActivity.class));
+    }
 }
