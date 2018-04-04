@@ -54,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+  public void Pedido(View view){
+        startActivity(new Intent(MainActivity.this, Pedidos.class));
+    }
 
 
 }
